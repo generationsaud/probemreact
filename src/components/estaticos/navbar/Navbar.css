@@ -1,0 +1,83 @@
+body{
+    background-color: rgba(255, 228, 219, 0.96);
+}
+.container{
+    background-color: rgba(255, 228, 219, 0.96);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.text{
+    color: rgba(255, 228, 219, 0.96);
+    border: 1px solid rgba(255, 228, 219, 0.96);
+}
+
+.center{
+    text-align: center;
+    align-items: center;
+}
+
+.top{
+    align-items: flex-start;
+}
+
+.tm{
+    height: 50px;
+   display: flex;
+   align-items: flex-start;
+}
+
+.btn{
+    height: 60px;
+  
+    margin-left: 0px;
+    margin-right: 0px;
+    /* margin-bottom: -10px; */
+    /* border: 1px solid green; */
+    
+}
+
+
+.padding-btn{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+.btn-design{
+    background-color: rgba(255, 228, 219, 0.96);
+    border: 1px solid rgba(255, 228, 219, 0.96);
+    cursor: pointer;
+    height: 60px;
+    width: 90px;
+    transition: 1s ease;
+    color: rgb(195, 62, 62);
+
+}
+
+.btn-design:hover{
+    background-color: rgb(195, 62, 62);
+    border: 1px solid rgb(195, 62, 62);
+    color: rgba(255, 228, 219, 0.96);
+}
+.border{
+    border-bottom: 2px solid rgb(177, 117, 117);
+}
+
+.margin{
+    margin-left: 250px}
+
+.margin2{
+    margin-right: 320px;
+}
