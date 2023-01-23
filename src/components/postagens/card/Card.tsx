@@ -23,6 +23,7 @@ import Produto from '../../../models/Produto';
 import { Button, Container, Grid } from '@material-ui/core';
 import { Box } from '@mui/material';
 import "./Card.css"
+import { toast } from 'react-toastify';
 
 
 
@@ -55,7 +56,17 @@ export default function RecipeReviewCard() {
 
   useEffect(() => {
     if (token == "") {
-      alert("Você precisa estar logado")
+      
+      toast.error('Você precisa estar logado', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "light",
+        progress: undefined,
+    });
       navigate("/login")
 
     }
@@ -84,12 +95,7 @@ export default function RecipeReviewCard() {
   return (
 
     <>
-    {/* <Grid container className='display'>
-        {
-        <Container maxWidth="md">
-          <Box mt={2} >
-           <Grid container spacing={2}>
-             */}
+ 
             
             {prod.map(prod => (
             
@@ -104,14 +110,7 @@ export default function RecipeReviewCard() {
                             R
                         </Avatar>
                         }
-                        // action={
-                        // <IconButton 
-                        // aria-label="settings"
-                        // aria-expanded={expanded}>
-                        //     <MoreVertIcon />
-                        // </IconButton>
-                        
-                        // }
+                   
                         title= {prod.email}
                         
                     />
@@ -152,11 +151,6 @@ export default function RecipeReviewCard() {
             </Grid>
                 
             ))}
-           {/* </Grid>
-          </Box>
-        </Container>  */}
-        {/* } */}
-        {/* </Grid> */}
     </>
     
   );

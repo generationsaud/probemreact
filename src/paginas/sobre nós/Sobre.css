@@ -1,9 +1,10 @@
 .h1 {
     position: absolute;
-    width: 569px;
+    width: 540px;
     height: 288px;
-    right: 545px;
-    top:200px;
+    text-align: center;
+    margin-top: 60px;
+    
 
     font-family: 'Abhaya Libre ExtraBold';
     font-style: normal;
@@ -21,10 +22,10 @@
 
 .p {
     position: absolute;
-    width: 532px;
+    width: 500px;
     height: 100px;
-    left: 110px;
-    top: 400px;
+    margin-left: 70px;
+    margin-top: 250px;
 
     font-family: 'Roboto';
     font-style: normal;

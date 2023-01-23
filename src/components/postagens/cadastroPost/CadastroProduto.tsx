@@ -1,12 +1,13 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import './CadastroProduto.css';
-import {useNavigate, useParams } from 'react-router-dom'
+import {Link, useNavigate, useParams } from 'react-router-dom'
 import Produto from '../../../models/Produto';
 import { busca, buscaId, post, put } from '../../../service/service';
 import Categoria from '../../../models/Categoria';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 
 function CadastroProduto() {
@@ -19,7 +20,16 @@ function CadastroProduto() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "light",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -88,25 +98,45 @@ function CadastroProduto() {
                     'Authorization': token
                 }
             })
-            alert('Produto atualizado com sucesso');
+            toast.success('Postagem atualizada com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "light",
+                progress: undefined,
+            });
         } else {
             post(`/produto`, produto, setProduto, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Produto cadastrado com sucesso');
+            toast.success('Postagem cadastrada com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "light",
+                progress: undefined,
+            });
         }
         back()
+     
 
     }
-
     function back() {
         navigate('/doacoes')
     }
+   
+    
 
     return (
-    <div className="card-color">
+    
         <Container maxWidth="sm" className="topo card-color">
             <Typography className='cadastro' variant="h3" color="textSecondary" component="h1" align="center" >Cadastrar doação</Typography>
             <form onSubmit={onSubmit}>
@@ -134,13 +164,16 @@ function CadastroProduto() {
                         }
                     </Select>
                     <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
+                    
                     <Button type="submit" variant="contained" className='btn-cadastro'>
                         Finalizar
                     </Button>
+                    
+                    
                 </FormControl>
             </form>
         </Container>
-    </div>
+ 
     )
 }
 export default CadastroProduto;

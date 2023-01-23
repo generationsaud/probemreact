@@ -12,24 +12,25 @@ import './Doacoes.css'
 function Doacoes() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-    );
-    let navigate = useNavigate();
-    const dispatch = useDispatch();
+    )
+    console.log(token)
+    // let navigate = useNavigate();
+    // const dispatch = useDispatch();
 
-    function goLogout() {
-        dispatch(addToken(''));
-        toast.info('Usuário deslogado', {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
-            progress: undefined,
-        });
-        navigate('/login')
-    }
+    // function goLogout() {
+    //     dispatch(addToken(''));
+    //     toast.info('Usuário deslogado', {
+    //         position: "top-right",
+    //         autoClose: 2000,
+    //         hideProgressBar: false,
+    //         closeOnClick: true,
+    //         pauseOnHover: false,
+    //         draggable: false,
+    //         theme: "colored",
+    //         progress: undefined,
+    //     });
+    //     navigate('/login')
+    // }
     return (
 
         <>

@@ -12,25 +12,22 @@ function Footer() {
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
-                        <Box className='siga' paddingTop={10} display="flex" alignItems="center" justifyContent="center">
+                        <Box className='siga'  display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com" target="_blank">
                                 <FacebookIcon className='redes' />
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com" target="_blank">
                                 <InstagramIcon className='redes' />
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://br.linkedin.com" target="_blank">
                                 <LinkedInIcon className='redes' />
                             </a>
+                            
                         </Box>
-                    </Box>
-                    <Box className='box1'>
-                        <Box>
-                            <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2022 Copyright:</Typography>
-                        </Box>
+                        <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2022 Copyright:</Typography>
                     </Box>
                 </Grid>
             </Grid>

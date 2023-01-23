@@ -19,13 +19,13 @@ function ListaProduto() {
     (state) => state.tokens
   );
 
-  useEffect(() => {
-    if (token == "") {
-      alert("Você precisa estar logado")
-      navigate("/login")
+  // useEffect(() => {
+  //   if (token == "") {
+  //     alert("Você precisa estar logado")
+  //     navigate("/login")
 
-    }
-  }, [token])
+  //   }
+  // }, [token])
 
   async function getProd() {
     await busca("/produto", setProd, {

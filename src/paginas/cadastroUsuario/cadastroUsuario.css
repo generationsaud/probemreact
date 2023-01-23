@@ -1,15 +1,23 @@
-.imagem {
-    background-image: url(https://www.diocesedeblumenau.org.br/site/padreraul/wp-content/uploads/sites/11/2021/01/servira.jpg);
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+.logo2{
+
+    width: 150px;
+    margin-top: 50px;
+
 }
 .texto2{
 font-weight: bold !important;
+font-family: 'Abhaya Libre ExtraBold' !important;
 }
 
 .btnCancelar{
 margin-right: 20px !important;
+background-color:#BC363A!important;
+color: white !important;
+
+}
+
+.cdts{
+    
+    background-color:#BC363A!important;
+    color: white !important;
 }

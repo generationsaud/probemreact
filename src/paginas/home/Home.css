@@ -1,17 +1,16 @@
+
 .img1 {
-    position: relative;
-    width: 639px;
-    top: 50px;
+    width: 500px;
     mix-blend-mode: darken;
+    margin-top: 4rem;
+    position: relative;
+
 }
 
 .pro {
-    position: absolute;
-    width: 569px;
-    height: 288px;
-    right: 545px;
-    top: 100px;
-
+   
+   margin-left: 5rem;
+    width: 550px;
     font-family: 'Abhaya Libre ExtraBold';
     font-style: normal;
     font-weight: 800;
@@ -20,18 +19,15 @@
     /* or 110% */
 
     letter-spacing: -0.04em;
-
     color: #393939;
-
     mix-blend-mode: luminosity;
 }
 
 .criando {
     position: absolute;
     width: 532px;
-    height: 100px;
-    left: 110px;
-    top: 500px;
+    left: 85px;
+    top: 480px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -53,21 +49,23 @@
     position: absolute;
     width: 160px;
     height: 46px;
-    left: 127px;
+    left: 80px;
     top: 633px;
     background: #BC363A;
     border-radius: 4px;
     color: white;
+    border-color: #BC363A;
 }
 .botao2 {
     position: absolute;
     width: 160px;
     height: 46px;
-    left: 315px;
+    left: 280px;
     top: 633px;
     background: #DEB93C;
     border-radius: 4px;
     color: white;
+    border-color: #DEB93C;
 }
 
 .botao1:hover{
@@ -77,3 +75,8 @@
 .botao2:hover{
     cursor: pointer;
 }
+
+/* .Grid{
+    margin-bottom: 5rem;
+} */
+

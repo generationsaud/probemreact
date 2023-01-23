@@ -1,12 +1,12 @@
-import React, {useState, useEffect, ChangeEvent} from 'react'
+
 import { Container, Typography, TextField, Button } from "@material-ui/core"
-import {useNavigate, useParams } from 'react-router-dom'
+import {Link, useNavigate, useParams } from 'react-router-dom'
 import './CadastroCategoria.css';
 import { useSelector } from 'react-redux';
 import Categoria from '../../../models/Categoria';
 import { buscaId, post, put } from '../../../service/service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
-import useLocalStorage from 'react-use-localstorage';
+import { ChangeEvent, useEffect, useState } from "react";
 
 function CadastroCategoria() {
     let navigate = useNavigate();
@@ -84,9 +84,11 @@ function CadastroCategoria() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro categoria</Typography>
                 <TextField value={categoria.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategoria(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
+               
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>
+                
             </form>
         </Container>
     )
