@@ -130,21 +130,21 @@ function CadastroProduto() {
 
     }
     function back() {
-        navigate('/doacoes')
+        navigate('/doacao')
     }
    
     
 
     return (
     
-        <Container maxWidth="sm" className="topo card-color">
+        <Container maxWidth="xs" className="topo card-color tamanhodocard">
             <Typography className='cadastro' variant="h3" color="textSecondary" component="h1" align="center" >Cadastrar doação</Typography>
             <form onSubmit={onSubmit}>
                 
-                <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
-                <TextField value={produto.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="email" label="E-mail" variant="outlined" name="email" margin="normal" fullWidth />
-                <TextField value={produto.contato} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="contato" label="Localização" variant="outlined" name="contato" margin="normal" fullWidth />
-                <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth />
+                <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth  className='margin-input'/>
+                <TextField value={produto.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="email" label="E-mail" variant="outlined" name="email" margin="normal" fullWidth className='margin-input'/>
+                <TextField value={produto.contato} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="contato" label="Localização" variant="outlined" name="contato" margin="normal" fullWidth className='margin-input'/>
+                <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth className='margin-input'/>
 
 
                 <FormControl >
@@ -163,7 +163,7 @@ function CadastroProduto() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
+                    <FormHelperText>Escolha uma categoria para a doação</FormHelperText>
                     
                     <Button type="submit" variant="contained" className='btn-cadastro'>
                         Finalizar

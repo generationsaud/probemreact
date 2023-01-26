@@ -21,6 +21,8 @@ import store from './store/store';
 import DeletarProduto from './components/postagens/deletarPostagem/DeletarPostagem';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import ListaDoacoes from './components/postagens/listadoacoes/ListaDoacoes';
+import NavMob from './components/estaticos/navmobile/NavMob';
 
 
 
@@ -34,6 +36,8 @@ function App() {
         <div style={{ minHeight: '100vh' }}>
           <Routes>
             <Route path='/' element={<Home />} />
+            
+            <Route path='/navmob' element={<NavMob />} />
 
             <Route path='/login' element={<Login />} />
 
@@ -46,6 +50,8 @@ function App() {
             <Route path='/cadastrousuario' element={<CadastroUsuario />} />
 
             <Route path='/doacoes' element={<ListaProduto />} />
+            
+            <Route path='/doacao' element={<ListaDoacoes />} />
 
             <Route path="/formularioProduto" element={<CadastroProduto />} />
 

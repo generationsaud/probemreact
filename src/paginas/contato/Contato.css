@@ -62,6 +62,7 @@
     border-radius: 4px;
     border: 0;
     cursor: pointer;
+    color: white;
     background-color: #BC363A;
     font-size: 18px;
     transition: background-color, transform 0.8s;
@@ -70,4 +71,17 @@
   .button:hover{
     background-color: #BC363A;
     transform: scale(1.01);
+  }
+
+  @media (max-width: 768px){
+    .button{
+      margin-bottom: 8vh;
+    }
+  }
+
+  @media (max-width: 425px){
+    .margin{
+      margin-left: 10vw !important;
+      width: 80vw !important;
+    }
   }

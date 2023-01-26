@@ -21,3 +21,110 @@ color: white !important;
     background-color:#BC363A!important;
     color: white !important;
 }
+
+.alinhamento-button{
+    text-align: center;
+}
+
+
+@media (max-width: 425px){
+    .widthcasdastro{
+        width: 70vw !important;
+        margin-left: -15vw !important;
+    }
+
+    .btnCancelar{
+       
+        margin-left: -145px !important;
+        margin-right: 10px !important;
+        background-color:#BC363A!important;
+        color: white !important;
+       
+        
+        }
+
+        .cdts{
+    
+            background-color:#BC363A!important;
+            color: white !important;
+            margin-left: 15px ;
+        }
+
+    .alinhamento-button{
+        text-align: start !important;
+        margin-left: 19vh !important;
+        width: 100vw !important;
+        margin-bottom: 12vh;
+    }
+
+    .texto2{
+        font-weight: bold !important;
+        font-family: 'Abhaya Libre ExtraBold' !important;
+        font-size: 30px !important;
+        }
+}
+
+@media (max-width: 375px){
+    .widthcasdastro{
+        width: 80vw !important;
+        margin-left: -20vw !important;
+    }
+
+    .btnCancelar{
+       
+        margin-left: -145px !important;
+        margin-right: 10px !important;
+        background-color:#BC363A!important;
+        color: white !important;
+       
+        
+        }
+
+        .cdts{
+    
+            background-color:#BC363A!important;
+            color: white !important;
+            margin-left: 15px ;
+        }
+
+    .alinhamento-button{
+        text-align: start !important;
+        margin-left: 17vh !important;
+        width: 100vw !important;
+        margin-bottom: 15vh;
+    }
+
+    .texto2{
+        font-weight: bold !important;
+        font-family: 'Abhaya Libre ExtraBold' !important;
+        font-size: 25px !important;
+        }
+}
+
+@media (max-width: 320px){
+
+
+    .widthcasdastro{
+        width: 80vw !important;
+        margin-left: -23vw !important;
+    }
+
+    .alinhamento-button{
+        text-align: start !important;
+        margin-left: 24vw !important;
+        width: 100vw !important;
+        margin-bottom: 28vh;
+    }
+    .texto2{
+        font-weight: bold !important;
+        font-family: 'Abhaya Libre ExtraBold' !important;
+        font-size: 21px !important;
+        }
+
+        .logo2{
+
+            width: 100px;
+            margin-top: 30px;
+        
+        }
+}

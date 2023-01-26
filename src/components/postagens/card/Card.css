@@ -15,3 +15,15 @@
     margin-right: 30px;
 }
 
+@media (min-width:321px){
+    .tamanho-card{
+        width: 345px !important;
+    }
+}
+
+@media (max-width:320px){
+    .tamanho-card{
+        width: 300px !important;
+    }
+}
+

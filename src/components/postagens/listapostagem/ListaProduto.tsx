@@ -47,7 +47,7 @@ function ListaProduto() {
                 <h1 className='doa'>Doações:</h1>
             </div>
             <Box display="flex" justifyContent="center" >
-                <Box marginRight={1}>
+                <Box marginRight={1} >
                     <ModalProduto />
                 </Box>
                 {/* <Link to="/produtos" className="text-decorator-none">

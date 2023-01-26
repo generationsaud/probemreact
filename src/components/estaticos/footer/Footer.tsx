@@ -9,7 +9,7 @@ import './Footer.css'
 function Footer() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center">
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='foot'>
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
                         <Box className='siga'  display="flex" alignItems="center" justifyContent="center">

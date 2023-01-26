@@ -103,7 +103,7 @@ export default function RecipeReviewCard() {
 
             <Grid className='margin10'>
                 
-                <Card  sx={{ minWidth: 345, maxWidth: 345}}>
+                <Card  sx={{ minWidth: 300, maxWidth: 345}} className="tamanho-card">
                     <CardHeader
                         avatar={
                         <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -116,8 +116,9 @@ export default function RecipeReviewCard() {
                     />
                     <CardMedia
                         component="img"
-                        height="194"
-                        width="350"
+                        // height="194"
+                        width="100%"
+                        height="100%"
                         image= {prod.foto}
                         alt= "imagem do objeto"
                     />

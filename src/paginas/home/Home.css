@@ -80,3 +80,306 @@
     margin-bottom: 5rem;
 } */
 
+@media (max-width: 768px) {
+    .mx768{
+        text-align: center !important;
+    }
+
+    .pro {
+        padding-left: 0vw;
+        padding-right: 15vw;
+         width: 550px;
+         font-family: 'Abhaya Libre ExtraBold';
+         font-style: normal;
+         font-weight: 800;
+         font-size: 60px;
+         line-height: 110px;
+         /* or 110% */
+     
+         letter-spacing: -0.04em;
+         color: #393939;
+         mix-blend-mode: luminosity;
+     }
+
+    .botao1 {
+        position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 120px;
+        top: 633px;
+        background: #BC363A;
+        border-radius: 4px;
+        color: white;
+        border-color: #BC363A;
+    }
+    .botao2 {
+        position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 400px;
+        top: 633px;
+        background: #DEB93C;
+        border-radius: 4px;
+        color: white;
+        border-color: #DEB93C;
+    }
+
+    .criando {
+        position: absolute;
+        width: 532px;
+        left: 17vw;
+        top: 480px;
+        margin-left: -5vw !important;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 50px;
+        /* or 227% */
+    
+        letter-spacing: 0.02em;
+    
+        /* Subtitles */
+    
+        color: #425466;
+    
+        mix-blend-mode: luminosity;
+    }
+
+    .img1 {
+        margin-left: -5vw !important;
+        width: 80vw !important;
+        mix-blend-mode: darken;
+        margin-top: 9rem !important;
+        position: relative;
+    
+    }
+
+
+  }
+
+  @media (max-width:425px) {
+    .mx768{
+        text-align:start !important;
+    }
+
+    .pro {
+   
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+        padding-right: 15vw;
+         width: 100vw;
+         font-family: 'Abhaya Libre ExtraBold';
+         font-style: normal;
+         font-weight: 800;
+         font-size: 60px;
+         line-height: 110px;
+         /* or 110% */
+     
+         letter-spacing: -0.04em;
+         color: #393939;
+         mix-blend-mode: luminosity;
+     }
+
+     .criando {
+        text-align: center;
+        margin-left: -15vw !important;
+        padding-left: 0
+        ;
+        width: 100vw;
+        top: 480px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight:100vw;
+        font-size: 22px;
+        line-height: 50px;
+        /* or 227% */
+    
+        letter-spacing: 0.02em;
+    
+        /* Subtitles */
+    
+        color: #425466;
+    
+        mix-blend-mode: luminosity;
+    }
+
+    .botao1 {
+        position: absolute;
+        width: 160px;
+        height: 46px;
+        left: 50px;
+        top: 633px;
+        background: #BC363A;
+        border-radius: 4px;
+        color: white;
+        border-color: #BC363A;
+    }
+    .botao2 {
+        position: absolute;
+        width: 160px;
+        height: 46px;
+        left: 240px;
+        top: 633px;
+        background: #DEB93C;
+        border-radius: 4px;
+        color: white;
+        border-color: #DEB93C;
+    }
+
+    .img1 {
+        
+        width: 85vw !important;
+        padding-left: 13vw !important;
+        mix-blend-mode: darken;
+        margin-top: 9rem !important;
+        position: relative;
+    
+    }
+  }
+
+
+  @media (max-width:375px){
+    .pro {
+   
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+        padding-right: 15vw;
+         width: 100vw;
+         font-family: 'Abhaya Libre ExtraBold';
+         font-style: normal;
+         font-weight: 300 !important;
+         font-size: 50px;
+         line-height:110px;
+         /* or 110% */
+     
+         letter-spacing: -0.04em;
+         color: #393939;
+         mix-blend-mode: luminosity;
+     }
+
+     .criando {
+        text-align: center;
+        margin-left: -17vw;
+        padding-left: 0
+        ;
+        width: 100vw;
+        top: 440px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight:100vw;
+        font-size: 22px;
+        line-height: 50px;
+        /* or 227% */
+    
+        letter-spacing: 0.02em;
+    
+        /* Subtitles */
+    
+        color: #425466;
+    
+        mix-blend-mode: luminosity;
+    }
+
+    .botao1 {
+        position: absolute;
+        width: 160px;
+        height: 46px;
+        left: 10px;
+        top: 600px;
+        background: #BC363A;
+        border-radius: 4px;
+        color: white;
+        border-color: #BC363A;
+    }
+    .botao2 {
+        position: absolute;
+        width: 160px;
+        height: 46px;
+        left: 200px;
+        top: 600px;
+        background: #DEB93C;
+        border-radius: 4px;
+        color: white;
+        border-color: #DEB93C;
+    }
+  }
+  @media (max-width:320px){
+    .pro {
+   
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+        padding-right: 15vw;
+         width: 100vw;
+         font-family: 'Abhaya Libre ExtraBold';
+         font-style: normal;
+         font-weight: 800 !important;
+         font-size: 45px;
+         line-height:100px;
+         /* or 110% */
+     
+         letter-spacing: -0.04em;
+         color: #393939;
+         mix-blend-mode: luminosity;
+     }
+
+     .criando {
+        text-align: center;
+        margin-left: -10vw !important;
+        padding-left: 0
+        ;
+        width: 90vw;
+        top: 400px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight:100vw;
+        font-size: 22px;
+        line-height: 50px;
+        /* or 227% */
+    
+        letter-spacing: 0.02em;
+    
+        /* Subtitles */
+    
+        color: #425466;
+    
+        mix-blend-mode: luminosity;
+    }
+
+    .botao1 {
+        position: absolute;
+        width: 120px;
+        height: 46px;
+        left: 25px;
+        top: 570px;
+        background: #BC363A;
+        border-radius: 4px;
+        color: white;
+        border-color: #BC363A;
+    }
+    .botao2 {
+        position: absolute;
+        width: 120px;
+        height: 46px;
+        left: 175px;
+        top: 570px;
+        background: #DEB93C;
+        border-radius: 4px;
+        color: white;
+        border-color: #DEB93C;
+    }
+
+    .img1 {
+        width: 85vw !important;
+        mix-blend-mode: darken;
+        margin-top: 9rem !important;
+        position: relative;
+    
+    }
+  }

@@ -76,20 +76,20 @@ function Login() {
         <Grid container justifyContent='center' >
                 <img className="logo2" src="logoprobem.png" alt="imagemcontato" />
         </Grid>
-        <Grid className = "entrar" container direction='row' justifyContent='center' alignItems='center'>
+        <Grid className = "entrar" container direction='row' justifyContent='center' alignItems='center' xs={12}>
             <Grid alignItems='center' xs={12}>
-                <Box padding={20}>
+                <Box padding={20} className="padding3">
                     <form onSubmit={onSubmit}>
-                        <Typography className='tesxtos1' variant='h3' gutterBottom color='textPrimary' component='h3' align='center'>Entrar</Typography>
-                        <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField id='senha' value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                        <Typography className='tesxtos1 novo tamanhoi' variant='h3'>Entrar</Typography>
+                        <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth className='width'/>
+                        <TextField id='senha' value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth className='width'/>
                         <Box marginTop={2} textAlign='center'>
-                            <Button type='submit' variant='contained' className='btnlogin'>
+                            <Button type='submit' variant='contained' className='btnlogin btnloginnovo'>
                                 Logar
                             </Button>
                         </Box>
                     </form>
-                    <Box display='flex' justifyContent='center' marginTop={2}>
+                    <Box display='flex' justifyContent='center' marginTop={2} className="width">
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>

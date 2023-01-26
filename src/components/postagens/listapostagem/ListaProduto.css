@@ -6,13 +6,7 @@
     width: 300px;
 }
 
-.btn-cadastro1 {
-    background-color: rgba(242, 104, 104, 1) !important;
-    position: absolute;
-    top: -40px;
 
-
-}
 
 .doa {
     font-family: 'Abhaya Libre ExtraBold';
@@ -29,3 +23,34 @@
     
 
 }
+
+@media (max-width: 768px) {
+    /* … */
+
+    .display{
+        padding-left: 23vw !important;
+        
+    }
+  }
+
+  @media (max-width: 425px) {
+    .display{
+        padding-left: 3vw !important;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .display{
+        padding-left: 0vw !important;
+        margin-left: -25px !important;
+        
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .display{
+        padding-left: 0vw !important;
+        margin-left: -30px !important;
+        
+    }
+  }

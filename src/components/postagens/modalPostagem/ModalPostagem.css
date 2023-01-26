@@ -2,6 +2,17 @@
     cursor: pointer;
 }
 
+.btn-cadastro1 {
+    background-color: rgba(242, 104, 104, 1) !important;
+    position: absolute;
+    color: white !important; 
+    top: -40px;
+
+
+}
+
+
+
 .btnModal{
     border-color: white !important;
     background-color: white !important;

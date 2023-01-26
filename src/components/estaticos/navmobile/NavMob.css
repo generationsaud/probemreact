@@ -1,0 +1,19 @@
+ul{
+    margin-top: 15vh;
+    margin-right: 8vw;
+}
+
+.none{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+p{
+    margin: 30px;
+    font-size: 20px;
+}
