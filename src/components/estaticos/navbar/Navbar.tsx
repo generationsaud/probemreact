@@ -1,14 +1,29 @@
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
-import React from "react";
+import { style } from "@mui/system";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { addToken } from "../../../store/tokens/actions";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import './Navbar.css'
 
 function Navbar(){
+
+    
+        const location = useLocation();
+        const [showNavbar, setShowNavbar] = useState(true);
+        
+        useEffect(() => {
+          if(location.pathname === '/navmob'){
+            setShowNavbar(false);
+
+          }else{
+            setShowNavbar(true);
+          }
+        }, [location]);
+      
 
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
@@ -35,6 +50,7 @@ function Navbar(){
     return (
         <>
             {/* <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"></meta> */}
+            {showNavbar && (
             <nav className="navbar">
 
                 <div>
@@ -68,6 +84,7 @@ function Navbar(){
                     </div>
                 </div>
             </nav>
+            )}
         </>
     );
 }

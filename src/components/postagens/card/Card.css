@@ -15,7 +15,7 @@
     margin-right: 30px;
 }
 
-@media (min-width:321px){
+@media (min-width:363px){
     .tamanho-card{
         width: 345px !important;
     }

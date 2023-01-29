@@ -47,6 +47,14 @@
     }
   }
   
+  @media (max-width: 375px) {
+    .display{
+        padding-left: 0vw !important;
+        margin-left: -12px !important;
+        
+    }
+  }
+  
   @media (max-width: 320px) {
     .display{
         padding-left: 0vw !important;

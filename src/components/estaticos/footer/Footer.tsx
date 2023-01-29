@@ -1,14 +1,30 @@
 import { Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css'
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
+
+    const location = useLocation();
+        const [showFooter, setShowFooter] = useState(true);
+        
+        useEffect(() => {
+          if(location.pathname === '/navmob'){
+            setShowFooter(false);
+
+          }else{
+            setShowFooter(true);
+          }
+        }, [location]);
+
+    
     return (
         <>
+            {showFooter && (
             <Grid container direction="row" justifyContent="center" alignItems="center" className='foot'>
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
@@ -31,6 +47,8 @@ function Footer() {
                     </Box>
                 </Grid>
             </Grid>
+            )}
+        
         </>
     );
 }

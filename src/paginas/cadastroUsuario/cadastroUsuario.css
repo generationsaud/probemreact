@@ -101,6 +101,23 @@ color: white !important;
         }
 }
 
+@media (max-width: 352px){
+    .texto2{
+        font-weight: bold !important;
+        font-family: 'Abhaya Libre ExtraBold' !important;
+        font-size: 22px !important;
+        }
+
+        .logo2{
+
+            width: 100px;
+            margin-top: 30px;
+        
+        }
+
+
+}
+
 @media (max-width: 320px){
 
 

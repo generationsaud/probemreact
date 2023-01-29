@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
@@ -23,21 +23,32 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import ListaDoacoes from './components/postagens/listadoacoes/ListaDoacoes';
 import NavMob from './components/estaticos/navmobile/NavMob';
+import styled from '@emotion/styled/types/base';
+
 
 
 
 function App() {
+
   return (
 
     <Provider store={store}>
       <ToastContainer />
       <Router>
+      
         <Navbar />
         <div style={{ minHeight: '100vh' }}>
           <Routes>
-            <Route path='/' element={<Home />} />
-            
+
+          
             <Route path='/navmob' element={<NavMob />} />
+          
+
+            <Route path='/' element={<Home />} />
+
+            <Route path='/page' element={<NavMob />} />
+            
+            
 
             <Route path='/login' element={<Login />} />
 

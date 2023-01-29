@@ -1,19 +1,54 @@
 ul{
-    margin-top: 15vh;
-    margin-right: 8vw;
+    margin-top: 5vh !important;
+    margin-right: 8vw !important;
 }
 
 .none{
     
     text-decoration: none;
-    color: black;
+    color: rgb(195, 62, 62);
+    -webkit-text-stroke:  1px rgb(195, 62, 62);
 }
 
 .center{
     text-align: center;
+    
 }
 
 p{
     margin: 30px;
     font-size: 20px;
 }
+
+
+.x1 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(195, 62, 62);
+    transform: rotate(45deg);
+    margin-bottom: -21px;
+    margin-left:1px;
+    border-radius:4px;
+  }
+.x2 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(195, 62, 62);
+    transform: rotate(-45deg);
+    border-radius:4px;
+  }
+
+  .twoo{
+    background-color: transparent;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition: 0.5s;
+  }
+
+  .xposicao{
+        margin-left: 75vw;
+        margin-bottom: 12vh;
+  }
+
+  ul.fixed { position: fixed; top: 0;}
