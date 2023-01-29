@@ -37,17 +37,18 @@ function NavMob() {
         navigate('/login')
     }
 
+    
     return(
         
         <ul className="fixed">
             
-            <Link to='/home'>
+            <div onClick={() => window.history.back()} className=''>
                         <div className="xposicao">
                             <div className="x1"></div>
                             <div className="twoo"></div>
                             <div className="x2"></div>
                         </div>
-            </Link>
+            </div>
              <p className="center"><Link to="/home" className="none">Home</Link></p>  
              <p className="center"><Link to="/sobre" className="none">Sobre nós</Link></p>
              <p className="center"><Link to="/doacoes" className="none">Doações</Link></p>
