@@ -64,6 +64,22 @@
     margin-left: auto;
 }
 
+@media (min-width:1910px) {
+    .img5{
+        width: 40vw ;
+    }
+
+    .h1{
+        font-size: 70px;
+        width: 40vw;
+    }
+
+    .p{
+        width:40vw;
+        font-size: 30px;
+    }
+}
+
 @media (max-width:768px) {
     .img5{
         padding-left: 17vw;

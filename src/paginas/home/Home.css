@@ -81,6 +81,64 @@
     margin-bottom: 5rem;
 } */
 
+@media (min-width: 1910px){
+        .botao1{
+            top: 75vh;
+            width:200px;
+            height: 60px;
+        }
+        .botao2{
+            top: 75vh;
+            width:200px;
+            height: 60px;
+            left: 330px;
+        }
+        .pro {
+   
+            margin-left: 5rem;
+             width: 550px;
+             font-family: 'Abhaya Libre ExtraBold';
+             font-style: normal;
+             font-weight: 800;
+             font-size: 60px;
+             line-height: 110px;
+             /* or 110% */
+         
+             letter-spacing: -0.04em;
+             color: #393939;
+             mix-blend-mode: luminosity;
+         }
+        .img1 {
+            width: 40vw !important;
+            mix-blend-mode: darken;
+            margin-top: 4rem;
+            position: relative;
+        
+        }
+
+        .criando {
+            position: absolute;
+            width: 532px;
+            left: 50px;
+            top: 480px;
+        
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 50px;
+            /* or 227% */
+        
+            letter-spacing: 0.02em;
+        
+            /* Subtitles */
+        
+            color: #425466;
+        
+            mix-blend-mode: luminosity;
+        }
+}
+
 @media (max-width: 768px) {
     .mx768{
         text-align: center !important;

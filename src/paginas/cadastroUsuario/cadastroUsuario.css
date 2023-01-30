@@ -35,7 +35,7 @@ color: white !important;
 
     .btnCancelar{
        
-        margin-left: -145px !important;
+        margin-left: -195px !important;
         margin-right: 10px !important;
         background-color:#BC363A!important;
         color: white !important;
@@ -72,7 +72,7 @@ color: white !important;
 
     .btnCancelar{
        
-        margin-left: -145px !important;
+        margin-left: -190px !important;
         margin-right: 10px !important;
         background-color:#BC363A!important;
         color: white !important;
@@ -91,7 +91,7 @@ color: white !important;
         text-align: start !important;
         margin-left: 17vh !important;
         width: 100vw !important;
-        margin-bottom: 15vh;
+        margin-bottom: 15vh !important;
     }
 
     .texto2{

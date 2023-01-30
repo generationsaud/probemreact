@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, IconButton } from "@material-ui/core"
 import './CadastroProduto.css';
 import {Link, useNavigate, useParams } from 'react-router-dom'
 import Produto from '../../../models/Produto';
@@ -8,6 +8,7 @@ import Categoria from '../../../models/Categoria';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import { PhotoCamera } from '@material-ui/icons';
 
 
 function CadastroProduto() {
@@ -132,8 +133,14 @@ function CadastroProduto() {
     function back() {
         navigate('/doacao')
     }
+
+    
    
     
+
+    
+    
+        
 
     return (
     
@@ -145,7 +152,7 @@ function CadastroProduto() {
                 <TextField value={produto.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="email" label="E-mail" variant="outlined" name="email" margin="normal" fullWidth className='margin-input'/>
                 <TextField value={produto.contato} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="contato" label="Localização" variant="outlined" name="contato" margin="normal" fullWidth className='margin-input'/>
                 <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth className='margin-input'/>
-
+                
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Categoria</InputLabel>

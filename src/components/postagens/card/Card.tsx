@@ -18,12 +18,14 @@ import { useEffect, useState } from 'react';
 import { busca } from '../../../service/service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Produto from '../../../models/Produto';
 import { Button, Container, Grid } from '@material-ui/core';
 import { Box } from '@mui/material';
 import "./Card.css"
+import DeleteIcon from '@mui/icons-material/Delete';
 import { toast } from 'react-toastify';
+import UpdateIcon from '@material-ui/icons/Update';
 
 
 
@@ -91,6 +93,13 @@ export default function RecipeReviewCard() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
+
+
+
+ 
+
+
  
   return (
 
@@ -145,6 +154,10 @@ export default function RecipeReviewCard() {
                             <Typography paragraph>
                                 Localização: {prod.contato}
                             </Typography>
+                            <div>
+                              <Link to={`/deletar/${prod.id}`} className='text-decoration'><Button startIcon={<DeleteIcon />} className='button-delete'>Deletar</Button></Link>
+                              <Link to={`/formularioProduto/${prod.id}`} className='text-decoration'><Button startIcon={<UpdateIcon  />} className='button-update'>Atualizar</Button></Link> 
+                            </div>
                         </CardContent>
                     </Collapse>
                 </Card>

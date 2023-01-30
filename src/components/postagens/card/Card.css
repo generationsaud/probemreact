@@ -1,3 +1,49 @@
+.button-delete{
+    margin-left: 21px !important;
+    height: 40px !important;
+    width: 120px !important;
+    color: red !important;
+    background-color:white !important;
+    border: 1px solid red !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    
+}
+
+.button-delete:hover{
+    color: white !important;
+    background-color:red !important;
+    transition: 0.4s  !important;
+}
+
+.text-decoration{
+    text-decoration: none;
+}
+
+.button-update{
+    margin-left: 30px !important;
+    height: 40px !important;
+    width: 120px !important;
+    
+    transition: 0.4s  !important;
+    color: rgb(58, 88, 223) !important;
+    background-color:white !important;
+    border: 1px solid white !important;
+    border: 1px solid rgb(58, 88, 223) !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+}
+
+.button-update:hover{
+    color: white !important;
+    background-color:rgb(58, 88, 223) !important;
+    border: 1px solid rgb(58, 88, 223) !important;
+}
+
+.button-margin1{
+ margin-left: 0;
+}
+
 .titulo2{
     font-size: large !important;
     font-style: bold !important;
@@ -19,6 +65,21 @@
     .tamanho-card{
         width: 345px !important;
     }
+    
+}
+
+
+@media (max-width:363px){
+   .button-delete{
+    width: 120px !important;
+    margin-left: 5px !important;
+   }
+
+   .button-update{
+    width: 120px !important;
+    margin-left: 20px !important;
+   }
+    
 }
 
 @media (max-width:320px){

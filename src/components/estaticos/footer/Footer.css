@@ -14,5 +14,17 @@
 }
 
 .foot{
-    margin-top: 5px;
+    margin-top: 20vh;
+}
+
+@media (min-width: 1440px){
+    .foot{
+        margin-top: 5vh !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .foot{
+        margin-top: 15px !important;
+    }
 }

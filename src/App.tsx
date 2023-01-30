@@ -24,6 +24,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import ListaDoacoes from './components/postagens/listadoacoes/ListaDoacoes';
 import NavMob from './components/estaticos/navmobile/NavMob';
 import styled from '@emotion/styled/types/base';
+import FileUploadButton from './components/postagens/uploadbutton/Upload';
 
 
 
@@ -77,6 +78,8 @@ function App() {
             <Route path="/formularioCategoria/:id" element={<CadastroCategoria />} />
 
             <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+            
+            <Route path="/update" element={<FileUploadButton />} />
 
           </Routes>
         </div>

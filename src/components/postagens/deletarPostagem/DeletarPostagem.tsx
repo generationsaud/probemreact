@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Typography, Button, Card, CardActions, CardContent } from "@material-ui/core"
 import {Box} from '@mui/material';
-
+import './DeletarPostagem.css'
 import {useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
@@ -50,52 +50,53 @@ function DeletarProduto() {
         }
 
         function sim() {
-          navigate('/produtos')
+          navigate('/doacoes')
             deleteId(`/produto/${id}`, {
               headers: {
                 'Authorization': token
               }
             });
-          //   toast.success('Produto deletada com sucesso', {
-          //     position: "top-right",
-          //     autoClose: 2000,
-          //     hideProgressBar: false,
-          //     closeOnClick: true,
-          //     pauseOnHover: false,
-          //     draggable: false,
-          //     theme: "colored",
-          //     progress: undefined,
-          // });
+            toast.success('Doação deletada com sucesso', {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: "colored",
+              progress: undefined,
+          });
           }
         
           function nao() {
-            navigate('/produtos')
+            navigate('/doacoes')
           }
   return (
     <>
       <Box m={2}>
-        <Card variant="outlined" >
+        <Card variant="outlined"  >
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Produto:
+                Com esta ação você apagará todos os dados da doação: <b>"{post?.nome}"</b>. Dejesa continuar mesmo assim?
               </Typography>
               <Typography color="textSecondary" >
-              {post?.nome}
+              
               </Typography>
             </Box>
 
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
-              <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                Sim
+            <Box display="flex" justifyContent="center" ml={1.0} mb={2} className='align-center'>
+              
+              <Box>
+              <Button  onClick={nao} variant="contained" size='large' color="secondary" className='nao'>
+                Não
               </Button>
               </Box>
-              <Box>
-              <Button  onClick={nao} variant="contained" size='large' color="secondary">
-                Não
+              <Box mx={2} >
+              <Button onClick={sim} variant="contained" className="sim" size='large' color="primary" >
+                Sim
               </Button>
               </Box>
             </Box>
